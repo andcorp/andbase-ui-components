@@ -1,10 +1,10 @@
-import "./App.css";
+import { Page } from "lib/layouts/Page";
 
 /**
  * アプリケーションルート
  */
 function App() {
-  return <div></div>;
+  return <Page />;
 }
 
 export default App;
