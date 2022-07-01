@@ -6,7 +6,8 @@
 	],
 	"extensions": {
 		"recommendations": [
-			"esbenp.prettier-vscode"
+			"esbenp.prettier-vscode",
+			"redhat.vscode-yaml"
 		]
 	},
 	"settings": {
@@ -28,6 +29,9 @@
 		},
 		"[scss]": {
 			"editor.defaultFormatter": "esbenp.prettier-vscode"
-		}
+		},
+		"[yaml]": {
+			"editor.defaultFormatter": "redhat.vscode-yaml"
+		},
 	}
 }
