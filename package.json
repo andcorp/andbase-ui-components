@@ -11,7 +11,7 @@
     "@andcorp:registry": "https://npm.pkg.github.com"
   },
   "scripts": {
-    "build": ""
+    "build": "swc ./src -d dist"
   },
   "devDependencies": {
     "@swc/cli": "^0.1.57",
