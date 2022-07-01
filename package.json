@@ -1,0 +1,23 @@
+{
+  "name": "@andcorp/andbase-ui-components",
+  "version": "0.0.1",
+  "description": "AND Base UI components",
+  "main": "index.js",
+  "repository": "git@github.com:andcorp/andbase-ui-components.git",
+  "author": "and-a-yamaguchi <a-yamaguchi@andcorp.co.jp>",
+  "license": "MIT",
+  "private": false,
+  "publishConfig": {
+    "@andcorp:registry": "https://npm.pkg.github.com"
+  },
+  "scripts": {
+    "build": "swc ./src -d dist"
+  },
+  "devDependencies": {
+    "@swc/cli": "^0.1.57",
+    "@swc/core": "^1.2.207",
+    "@types/jest": "28.1.4",
+    "jest": "^28.1.2",
+    "typescript": "^4.7.4"
+  }
+}
