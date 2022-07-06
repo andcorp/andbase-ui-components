@@ -22,7 +22,7 @@ export interface ComponentProps {
 /**
  * コンポーネントの型
  */
-export type Component = React.FC<ComponentProps>;
+export type Component<Props = {}> = React.FC<ComponentProps & Props>;
 
 /**
  * 親コンポーネントの型
