@@ -21,8 +21,8 @@ export const Header: ComponentWithChildren = ({
   );
 
   return (
-    <div className={headerClassName} data-testid={testId}>
+    <header className={headerClassName} data-testid={testId}>
       {children}
-    </div>
+    </header>
   );
 };

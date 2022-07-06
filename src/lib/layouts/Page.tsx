@@ -22,8 +22,8 @@ export const Page: ComponentWithChildren = ({
   );
 
   return (
-    <div className={pageClassName} data-testid={testId}>
+    <main className={pageClassName} data-testid={testId}>
       <div className="ly_page_inner">{children}</div>
-    </div>
+    </main>
   );
 };
