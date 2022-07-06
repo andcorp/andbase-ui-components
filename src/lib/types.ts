@@ -27,6 +27,6 @@ export type Component = React.FC<ComponentProps>;
 /**
  * 親コンポーネントの型
  */
-export type ComponentWithChildren = React.FC<
-  ComponentProps & React.PropsWithChildren
+export type ComponentWithChildren<Props = {}> = React.FC<
+  ComponentProps & React.PropsWithChildren & Props
 >;
