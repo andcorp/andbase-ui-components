@@ -9,5 +9,5 @@ import { Component } from "lib/types";
  * Exampleサイト ホーム
  */
 export const Home: Component = () => {
-  return <Page>{}</Page>;
+  return <Page>test</Page>;
 };

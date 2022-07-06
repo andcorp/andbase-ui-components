@@ -1,10 +1,10 @@
-import { Page } from "lib/layouts/Page";
+import { Home } from "examples/Home";
 
 /**
  * アプリケーションルート
  */
 function App() {
-  return <Page />;
+  return <Home />;
 }
 
 export default App;
