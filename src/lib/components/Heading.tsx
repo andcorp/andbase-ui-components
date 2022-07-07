@@ -8,15 +8,17 @@ import { ComponentWithChildren } from "lib/types";
 import { joinClassNames } from "lib/utils";
 
 /**
+ * 見出し要素レベル
+ */
+export type HeadingLevel = 1 | 2 | 3 | 4 | 5 | 6;
+
+/**
  * 見出し要素
  */
-export const Heading: ComponentWithChildren<{ id?: string; level: number }> = ({
-  id,
-  children,
-  className,
-  testId,
-  level,
-}) => {
+export const Heading: ComponentWithChildren<{
+  id?: string;
+  level: HeadingLevel;
+}> = ({ id, children, className, testId, level }) => {
   // 見出しレベルに応じたタグを生成
   const HeadingTag = React.useMemo(
     () => `h${level}` as keyof JSX.IntrinsicElements,
