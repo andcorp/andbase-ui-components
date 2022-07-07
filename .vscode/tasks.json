@@ -1,0 +1,16 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "shell",
+			"group": "build",
+			"problemMatcher": [],
+			"label": "upgrade @andcorp",
+			"command": "yarn",
+			"args": [
+				"upgrade",
+				"@andcorp/andbase-ui-styles"
+			]
+		}
+	]
+}
