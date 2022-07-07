@@ -2,6 +2,7 @@
  * Exampleサイト ホーム
  */
 
+import { Anchor } from "lib/components/Anchor";
 import { PageHeader, PageHeaderItem } from "lib/components/PageHeader";
 import { Header } from "lib/layouts/Header";
 import { Page } from "lib/layouts/Page";
@@ -16,9 +17,19 @@ export const Home: Component = () => {
       <Header>
         <PageHeader>
           <PageHeaderItem>
-            <img src="/images/logo.png" alt="ANDCORP" width="128" height="44" />
+            <Anchor href="/">
+              <img
+                src="/images/logo.png"
+                alt="ANDCORP"
+                width="128"
+                height="44"
+              />
+            </Anchor>
           </PageHeaderItem>
-          <PageHeaderItem grow>test</PageHeaderItem>
+          <PageHeaderItem grow>
+            <Anchor href="/">Top</Anchor>
+            <Anchor href="/test">Test</Anchor>
+          </PageHeaderItem>
           <PageHeaderItem>test2</PageHeaderItem>
         </PageHeader>
       </Header>
