@@ -1,10 +1,10 @@
-import "./App.css";
+import { Home } from "examples/Home";
 
 /**
  * アプリケーションルート
  */
 function App() {
-  return <div></div>;
+  return <Home />;
 }
 
 export default App;
