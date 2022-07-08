@@ -6,3 +6,8 @@
 @forward "~@andcorp/andbase-ui-styles/scss/layouts";
 @forward "~@andcorp/andbase-ui-styles/scss/blocks";
 @forward "~@andcorp/andbase-ui-styles/scss/elements";
+
+// ルート要素を画面全体に広げる。
+div#root {
+  height: 100%;
+}
