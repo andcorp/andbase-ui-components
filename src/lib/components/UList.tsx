@@ -10,16 +10,20 @@ import { joinClassNames } from "lib/utils";
 /**
  * 順序無しリスト
  */
-export const UList: ComponentWithChildren<{ disc?: boolean }> = ({
-  className,
-  children,
-  testId,
-  disc,
-}) => {
+export const UList: ComponentWithChildren<{
+  disc?: boolean;
+  horizontal?: boolean;
+}> = ({ className, children, testId, disc, horizontal }) => {
   // リストクラス名
   const listClassName = React.useMemo(
-    () => joinClassNames("bl_ulist", disc && "bl_ulist__disc", className),
-    [className, disc]
+    () =>
+      joinClassNames(
+        "bl_ulist",
+        disc && "bl_ulist__disc",
+        horizontal && "bl_ulist__horizontal",
+        className
+      ),
+    [className, disc, horizontal]
   );
 
   return (

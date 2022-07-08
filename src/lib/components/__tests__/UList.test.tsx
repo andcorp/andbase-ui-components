@@ -34,6 +34,18 @@ describe("UListのテスト", () => {
     const elements = (await screen.findAllByTestId("list"))[0];
     expect(elements).toHaveClass("bl_ulist", "bl_ulist__disc", "test_class");
   });
+
+  it("horizontal指定が行えること", async () => {
+    // レンダリング実行
+    render(<UList className="test_class" horizontal testId="list" />);
+
+    const elements = (await screen.findAllByTestId("list"))[0];
+    expect(elements).toHaveClass(
+      "bl_ulist",
+      "bl_ulist__horizontal",
+      "test_class"
+    );
+  });
 });
 
 describe("UListItemのテスト", () => {
