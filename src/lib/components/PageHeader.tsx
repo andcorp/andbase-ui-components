@@ -1,6 +1,7 @@
 /**
  * ページヘッダー要素.
  */
+
 import React from "react";
 
 import { ComponentWithChildren } from "lib/types";
