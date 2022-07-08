@@ -11,7 +11,7 @@
  * @returns 連結されたクラス名
  */
 export function joinClassNames(
-  ...classNames: ReadonlyArray<string | null | undefined>
+  ...classNames: ReadonlyArray<string | null | undefined | false>
 ): string {
   return classNames.filter((e) => e).join(" ");
 }
