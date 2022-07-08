@@ -4,6 +4,7 @@
 
 import { Anchor } from "lib/components/Anchor";
 import { Heading } from "lib/components/Heading";
+import { OList, OListItem } from "lib/components/OList";
 import { PageFooter, PageFooterItem } from "lib/components/PageFooter";
 import { PageHeader, PageHeaderItem } from "lib/components/PageHeader";
 import { UList, UListItem } from "lib/components/UList";
@@ -72,6 +73,18 @@ export const Home: Component = () => {
           <UListItem>水平リスト項目2</UListItem>
           <UListItem>水平リスト項目3</UListItem>
         </UList>
+        <OList>
+          <OListItem>番号付きリスト項目1</OListItem>
+          <OListItem>
+            番号付きリスト項目2
+            <OList>
+              <OListItem>番号付きリスト項目2.1</OListItem>
+              <OListItem>番号付きリスト項目2.2</OListItem>
+              <OListItem>番号付きリスト項目2.3</OListItem>
+            </OList>
+          </OListItem>
+          <OListItem>番号付きリスト項目3</OListItem>
+        </OList>
       </Page>
       <Footer>
         <PageFooter>
