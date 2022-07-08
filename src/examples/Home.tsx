@@ -6,6 +6,7 @@ import { Anchor } from "lib/components/Anchor";
 import { Heading } from "lib/components/Heading";
 import { PageFooter, PageFooterItem } from "lib/components/PageFooter";
 import { PageHeader, PageHeaderItem } from "lib/components/PageHeader";
+import { UList, UListItem } from "lib/components/UList";
 import { Footer } from "lib/layouts/Footer";
 import { Header } from "lib/layouts/Header";
 import { Page } from "lib/layouts/Page";
@@ -44,6 +45,33 @@ export const Home: Component = () => {
         <Heading level={4}>見出し4</Heading>
         <Heading level={5}>見出し5</Heading>
         <Heading level={6}>見出し6</Heading>
+        <UList>
+          <UListItem>リスト項目1</UListItem>
+          <UListItem>
+            リスト項目2
+            <UList>
+              <UListItem>リスト項目2.1</UListItem>
+              <UListItem>リスト項目2.2</UListItem>
+              <UListItem>リスト項目2.3</UListItem>
+            </UList>
+            <UList disc>
+              <UListItem>リスト項目2.4</UListItem>
+              <UListItem>リスト項目2.5</UListItem>
+              <UListItem>
+                リスト項目2.6
+                <UList>
+                  <UListItem>リスト項目2.6.1</UListItem>
+                </UList>
+              </UListItem>
+            </UList>
+          </UListItem>
+          <UListItem>リスト項目3</UListItem>
+        </UList>
+        <UList horizontal>
+          <UListItem>水平リスト項目1</UListItem>
+          <UListItem>水平リスト項目2</UListItem>
+          <UListItem>水平リスト項目3</UListItem>
+        </UList>
       </Page>
       <Footer>
         <PageFooter>
