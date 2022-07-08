@@ -41,7 +41,7 @@ export const PageHeaderItem: ComponentWithChildren<{ grow?: boolean }> = ({
     () =>
       joinClassNames(
         "bl_pageHeader_item",
-        grow ? "bl_pageHeader_item__grow" : undefined,
+        grow && "bl_pageHeader_item__grow",
         className
       ),
     [className, grow]

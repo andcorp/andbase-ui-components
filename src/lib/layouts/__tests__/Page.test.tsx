@@ -26,4 +26,12 @@ describe("Pageのテスト", () => {
     const elements = (await screen.findAllByTestId("children"))[0];
     expect(elements).toHaveTextContent("test");
   });
+
+  it("grow指定が行えること", async () => {
+    // レンダリング実行
+    render(<Page className="test_class" grow testId="page" />);
+
+    const elements = (await screen.findAllByTestId("page"))[0];
+    expect(elements).toHaveClass("ly_page", "ly_page__grow", "test_class");
+  });
 });

@@ -12,7 +12,7 @@
 
 "@andcorp/andbase-ui-styles@https://github.com/andcorp/andbase-ui-styles.git":
   version "0.0.1"
-  resolved "https://github.com/andcorp/andbase-ui-styles.git#b00e98478962d08cc58fccb7828bf570fea98d86"
+  resolved "https://github.com/andcorp/andbase-ui-styles.git#7986bb83c7cfb44308a76a2d4e8aab96ad73b6bb"
   dependencies:
     modern-css-reset "^1.4.0"
 

@@ -1,5 +1,5 @@
 /**
- * ヘッダー要素.
+ * ヘッダー要素
  */
 import React from "react";
 
