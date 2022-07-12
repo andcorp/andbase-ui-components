@@ -3,7 +3,7 @@
  */
 
 import { render, screen } from "@testing-library/react";
-import { Heading } from "../Heading";
+import { Heading, HeadingLevel } from "../Heading";
 
 describe("Headingのテスト", () => {
   it("className指定が行えること", async () => {
@@ -41,7 +41,13 @@ describe("Headingのテスト", () => {
 
     for (let i = 1; i <= 6; ++i) {
       // レンダリング実行
-      rerender(<Heading level={i} className="test_class" testId="heading" />);
+      rerender(
+        <Heading
+          level={i as HeadingLevel}
+          className="test_class"
+          testId="heading"
+        />
+      );
 
       // 指定レベルの見出しになっているかチェック
       const elements = (await screen.findAllByTestId("heading"))[0];
