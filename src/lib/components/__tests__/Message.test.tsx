@@ -25,4 +25,18 @@ describe("Messageのテスト", () => {
     const elements = (await screen.findAllByTestId("children"))[0];
     expect(elements).toHaveTextContent("test");
   });
+
+  it("テーマカラー指定が行えること", async () => {
+    // レンダリング実行
+    render(
+      <Message className="test_class" testId="message" themeColor="recommend" />
+    );
+
+    const elements = (await screen.findAllByTestId("message"))[0];
+    expect(elements).toHaveClass(
+      "bl_message",
+      "bl_message__recommend",
+      "test_class"
+    );
+  });
 });
