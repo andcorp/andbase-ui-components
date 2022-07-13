@@ -30,3 +30,20 @@ export type Component<Props = {}> = React.FC<ComponentProps & Props>;
 export type ComponentWithChildren<Props = {}> = React.FC<
   ComponentProps & React.PropsWithChildren & Props
 >;
+
+/**
+ * テーマ色定義
+ */
+export type ThemeColor =
+  | "recommend"
+  | "review"
+  | "fresh"
+  | "warning"
+  | "danger";
+
+/**
+ * テーマ色プロパティ
+ */
+export interface ThemeColorProps {
+  themeColor?: ThemeColor;
+}

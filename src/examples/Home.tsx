@@ -4,6 +4,7 @@
 
 import { Anchor } from "lib/components/Anchor";
 import { Heading } from "lib/components/Heading";
+import { Message } from "lib/components/Message";
 import { OList, OListItem } from "lib/components/OList";
 import { PageFooter, PageFooterItem } from "lib/components/PageFooter";
 import { PageHeader, PageHeaderItem } from "lib/components/PageHeader";
@@ -85,6 +86,12 @@ export const Home: Component = () => {
           </OListItem>
           <OListItem>番号付きリスト項目3</OListItem>
         </OList>
+        <Message>メッセージ表示</Message>
+        <Message themeColor="recommend">推奨メッセージ</Message>
+        <Message themeColor="review">確認メッセージ</Message>
+        <Message themeColor="fresh">更新メッセージ</Message>
+        <Message themeColor="warning">警告メッセージ</Message>
+        <Message themeColor="danger">危険メッセージ</Message>
       </Page>
       <Footer>
         <PageFooter>
