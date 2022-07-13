@@ -3,6 +3,7 @@
  */
 
 import { Anchor } from "lib/components/Anchor";
+import { Button } from "lib/components/Button";
 import { Heading } from "lib/components/Heading";
 import { Message } from "lib/components/Message";
 import { OList, OListItem } from "lib/components/OList";
@@ -92,6 +93,12 @@ export const Home: Component = () => {
         <Message themeColor="fresh">更新メッセージ</Message>
         <Message themeColor="warning">警告メッセージ</Message>
         <Message themeColor="danger">危険メッセージ</Message>
+        <Button>デフォルトボタン</Button>
+        <Button themeColor="recommend">デフォルトボタン</Button>
+        <Button themeColor="review">確認ボタン</Button>
+        <Button themeColor="fresh">更新ボタン</Button>
+        <Button themeColor="warning">警告ボタン</Button>
+        <Button themeColor="danger">危険ボタン</Button>
       </Page>
       <Footer>
         <PageFooter>
