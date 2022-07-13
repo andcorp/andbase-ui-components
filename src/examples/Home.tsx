@@ -87,6 +87,11 @@ export const Home: Component = () => {
           <OListItem>番号付きリスト項目3</OListItem>
         </OList>
         <Message>メッセージ表示</Message>
+        <Message themeColor="recommend">推奨メッセージ</Message>
+        <Message themeColor="review">確認メッセージ</Message>
+        <Message themeColor="fresh">更新メッセージ</Message>
+        <Message themeColor="warning">警告メッセージ</Message>
+        <Message themeColor="danger">危険メッセージ</Message>
       </Page>
       <Footer>
         <PageFooter>
