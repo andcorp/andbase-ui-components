@@ -40,3 +40,10 @@ export type ThemeColor =
   | "fresh"
   | "warning"
   | "danger";
+
+/**
+ * テーマ色プロパティ
+ */
+export interface ThemeColorProps {
+  themeColor?: ThemeColor;
+}
