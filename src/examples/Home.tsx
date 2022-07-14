@@ -4,6 +4,7 @@
 
 import { Anchor } from "lib/components/Anchor";
 import { Button } from "lib/components/Button";
+import { ButtonGroup } from "lib/components/ButtonGroup";
 import { Heading } from "lib/components/Heading";
 import { Message } from "lib/components/Message";
 import { OList, OListItem } from "lib/components/OList";
@@ -93,12 +94,32 @@ export const Home: Component = () => {
         <Message themeColor="fresh">更新メッセージ</Message>
         <Message themeColor="warning">警告メッセージ</Message>
         <Message themeColor="danger">危険メッセージ</Message>
-        <Button>デフォルトボタン</Button>
-        <Button themeColor="recommend">デフォルトボタン</Button>
-        <Button themeColor="review">確認ボタン</Button>
-        <Button themeColor="fresh">更新ボタン</Button>
-        <Button themeColor="warning">警告ボタン</Button>
-        <Button themeColor="danger">危険ボタン</Button>
+        <ButtonGroup>
+          <Button>デフォルトボタン</Button>
+          <Button themeColor="recommend">デフォルトボタン</Button>
+          <Button themeColor="review">確認ボタン</Button>
+          <Button themeColor="fresh">更新ボタン</Button>
+          <Button themeColor="warning">警告ボタン</Button>
+          <Button themeColor="danger">危険ボタン</Button>
+        </ButtonGroup>
+        <ButtonGroup>
+          <Button disabled>デフォルトボタン</Button>
+          <Button themeColor="recommend" disabled>
+            デフォルトボタン
+          </Button>
+          <Button themeColor="review" disabled>
+            確認ボタン
+          </Button>
+          <Button themeColor="fresh" disabled>
+            更新ボタン
+          </Button>
+          <Button themeColor="warning" disabled>
+            警告ボタン
+          </Button>
+          <Button themeColor="danger" disabled>
+            危険ボタン
+          </Button>
+        </ButtonGroup>
       </Page>
       <Footer>
         <PageFooter>
