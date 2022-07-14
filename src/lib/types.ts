@@ -47,3 +47,10 @@ export type ThemeColor =
 export interface ThemeColorProps {
   themeColor?: ThemeColor;
 }
+
+/**
+ * 有効状態プロパティ
+ */
+export interface DisabledProps {
+  disabled?: boolean;
+}

@@ -4,17 +4,22 @@
 
 import React from "react";
 
-import { ComponentWithChildren, ThemeColorProps } from "lib/types";
+import {
+  ComponentWithChildren,
+  DisabledProps,
+  ThemeColorProps,
+} from "lib/types";
 import { joinClassNames } from "lib/utils";
 
 /**
  * ボタン要素
  */
 export const Button: ComponentWithChildren<
-  ThemeColorProps & {
-    onClick?: () => void;
-  }
-> = ({ onClick, children, className, testId, themeColor }) => {
+  ThemeColorProps &
+    DisabledProps & {
+      onClick?: () => void;
+    }
+> = ({ onClick, children, className, testId, themeColor, disabled }) => {
   const buttonClassName = React.useMemo(
     () =>
       joinClassNames(
@@ -26,7 +31,12 @@ export const Button: ComponentWithChildren<
   );
 
   return (
-    <button className={buttonClassName} onClick={onClick} data-testid={testId}>
+    <button
+      className={buttonClassName}
+      disabled={disabled}
+      onClick={onClick}
+      data-testid={testId}
+    >
       {children}
     </button>
   );

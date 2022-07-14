@@ -10,8 +10,11 @@ describe("Buttonのテスト", () => {
     // レンダリング実行
     render(<Button className="test_class" testId="header" />);
 
-    const elements = (await screen.findAllByTestId("header"))[0];
+    const elements = (
+      await screen.findAllByTestId("header")
+    )[0] as HTMLButtonElement;
     expect(elements.tagName).toStrictEqual("BUTTON");
+    expect(elements.disabled).toBeFalsy();
     expect(elements).toHaveClass("el_button", "test_class");
   });
 
@@ -39,5 +42,15 @@ describe("Buttonのテスト", () => {
       "el_button__recommend",
       "test_class"
     );
+  });
+
+  it("無効状態指定が行えること", async () => {
+    // レンダリング実行
+    render(<Button className="test_class" testId="message" disabled />);
+
+    const elements = (
+      await screen.findAllByTestId("message")
+    )[0] as HTMLButtonElement;
+    expect(elements.disabled).toBeTruthy();
   });
 });
