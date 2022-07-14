@@ -7,6 +7,7 @@ import { Button } from "lib/components/Button";
 import { ButtonGroup } from "lib/components/ButtonGroup";
 import { Heading } from "lib/components/Heading";
 import { Message } from "lib/components/Message";
+import { NavList } from "lib/components/NavList";
 import { OList, OListItem } from "lib/components/OList";
 import { PageFooter, PageFooterItem } from "lib/components/PageFooter";
 import { PageHeader, PageHeaderItem } from "lib/components/PageHeader";
@@ -36,8 +37,10 @@ export const Home: Component = () => {
             </Anchor>
           </PageHeaderItem>
           <PageHeaderItem grow>
-            <Anchor href="/">Top</Anchor>
-            <Anchor href="/test">Test</Anchor>
+            <NavList>
+              <Anchor href="/">Top</Anchor>
+              <Anchor href="/test">Test</Anchor>
+            </NavList>
           </PageHeaderItem>
           <PageHeaderItem>test2</PageHeaderItem>
         </PageHeader>
