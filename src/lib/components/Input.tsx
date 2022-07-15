@@ -31,12 +31,14 @@ export const Input: Component<{
   placeholder?: string;
   autoComplete?: string;
   name?: string;
+  id?: string;
   onChange?: (event: React.ChangeEvent<HTMLInputElement>) => void;
 }> = ({
   type,
   placeholder,
   autoComplete,
   name,
+  id,
   onChange,
   className,
   testId,
@@ -52,6 +54,7 @@ export const Input: Component<{
       className={inputClassName}
       autoComplete={autoComplete}
       name={name}
+      id={id}
       data-testid={testId}
       placeholder={placeholder}
       onChange={onChange}

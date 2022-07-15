@@ -56,6 +56,18 @@ describe("Inputのテスト", () => {
     expect(elements.autocomplete).toBe("name");
   });
 
+  it("id指定が行えること", async () => {
+    // レンダリング実行
+    render(<Input className="test_class" id="testInput" testId="header" />);
+
+    const elements = (
+      await screen.findAllByTestId("header")
+    )[0] as HTMLInputElement;
+    expect(elements.type).toBe("text");
+    expect(elements).toHaveClass("el_input", "test_class");
+    expect(elements.id).toBe("testInput");
+  });
+
   it("name指定が行えること", async () => {
     // レンダリング実行
     render(<Input className="test_class" name="testInput" testId="header" />);
