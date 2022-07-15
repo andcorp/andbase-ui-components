@@ -10,7 +10,21 @@ describe("Inputのテスト", () => {
     // レンダリング実行
     render(<Input className="test_class" testId="header" />);
 
-    const elements = (await screen.findAllByTestId("header"))[0];
+    const elements = (
+      await screen.findAllByTestId("header")
+    )[0] as HTMLInputElement;
+    expect(elements.type).toBe("text");
+    expect(elements).toHaveClass("el_input", "test_class");
+  });
+
+  it("type指定が行えること", async () => {
+    // レンダリング実行
+    render(<Input className="test_class" type="password" testId="header" />);
+
+    const elements = (
+      await screen.findAllByTestId("header")
+    )[0] as HTMLInputElement;
+    expect(elements.type).toBe("password");
     expect(elements).toHaveClass("el_input", "test_class");
   });
 
@@ -23,6 +37,7 @@ describe("Inputのテスト", () => {
     const elements = (
       await screen.findAllByTestId("header")
     )[0] as HTMLInputElement;
+    expect(elements.type).toBe("text");
     expect(elements).toHaveClass("el_input", "test_class");
     expect(elements.placeholder).toBe("テスト入力");
   });
