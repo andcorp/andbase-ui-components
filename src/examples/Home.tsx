@@ -6,11 +6,13 @@ import { Anchor } from "lib/components/Anchor";
 import { Button } from "lib/components/Button";
 import { ButtonGroup } from "lib/components/ButtonGroup";
 import { Heading } from "lib/components/Heading";
+import { Input } from "lib/components/Input";
 import { Message } from "lib/components/Message";
 import { NavList } from "lib/components/NavList";
 import { OList, OListItem } from "lib/components/OList";
 import { PageFooter, PageFooterItem } from "lib/components/PageFooter";
 import { PageHeader, PageHeaderItem } from "lib/components/PageHeader";
+import { TextArea } from "lib/components/Textarea";
 import { UList, UListItem } from "lib/components/UList";
 import { Footer } from "lib/layouts/Footer";
 import { Header } from "lib/layouts/Header";
@@ -123,6 +125,18 @@ export const Home: Component = () => {
             危険ボタン
           </Button>
         </ButtonGroup>
+        <div>
+          <Input autoFocus placeholder="テスト入力" />
+          <Input type="password" placeholder="テスト入力" />
+          <Input type="date" placeholder="テスト入力" />
+          <Input type="month" placeholder="テスト入力" />
+          <Input type="week" placeholder="テスト入力" />
+          <Input type="datetime-local" placeholder="テスト入力" />
+          <Input value="読み取り専用" readOnly />
+          <Input value="無効" disabled />
+          <Input type="text" pattern="[0-9]" required />
+          <TextArea placeholder="テキストエリア" />
+        </div>
       </Page>
       <Footer>
         <PageFooter>
