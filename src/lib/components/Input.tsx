@@ -35,6 +35,7 @@ export const Input: Component<{
   size?: number;
   min?: number;
   max?: number;
+  step?: number;
   minLength?: number;
   maxLength?: number;
   pattern?: string;
@@ -55,6 +56,7 @@ export const Input: Component<{
   size,
   min,
   max,
+  step,
   minLength,
   maxLength,
   pattern,
@@ -78,6 +80,7 @@ export const Input: Component<{
       size={size}
       min={min}
       max={max}
+      step={step}
       minLength={minLength}
       maxLength={maxLength}
       pattern={pattern}

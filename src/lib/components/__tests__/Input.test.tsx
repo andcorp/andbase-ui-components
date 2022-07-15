@@ -110,7 +110,7 @@ describe("Inputのテスト", () => {
     expect(elements.maxLength).toBe(100);
   });
 
-  it("min・max指定が行えること", async () => {
+  it("min・max・step指定が行えること", async () => {
     // レンダリング実行
     render(
       <Input
@@ -118,6 +118,7 @@ describe("Inputのテスト", () => {
         type="number"
         min={1}
         max={100}
+        step={10}
         testId="input"
       />
     );
@@ -129,6 +130,7 @@ describe("Inputのテスト", () => {
     expect(elements).toHaveClass("el_input", "test_class");
     expect(elements.min).toBe("1");
     expect(elements.max).toBe("100");
+    expect(elements.step).toBe("10");
   });
 
   it("pattern指定が行えること", async () => {
