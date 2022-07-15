@@ -30,8 +30,17 @@ export const Input: Component<{
   type?: InputType;
   placeholder?: string;
   autoComplete?: string;
+  name?: string;
   onChange?: (event: React.ChangeEvent<HTMLInputElement>) => void;
-}> = ({ type, placeholder, autoComplete, onChange, className, testId }) => {
+}> = ({
+  type,
+  placeholder,
+  autoComplete,
+  name,
+  onChange,
+  className,
+  testId,
+}) => {
   const inputClassName = React.useMemo(
     () => joinClassNames("el_input", className),
     [className]
@@ -42,6 +51,7 @@ export const Input: Component<{
       type={type}
       className={inputClassName}
       autoComplete={autoComplete}
+      name={name}
       data-testid={testId}
       placeholder={placeholder}
       onChange={onChange}
