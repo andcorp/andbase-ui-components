@@ -30,6 +30,7 @@ export const Input: Component<{
   type?: InputType;
   placeholder?: string;
   autoComplete?: string;
+  autoFocus?: boolean;
   name?: string;
   id?: string;
   size?: number;
@@ -48,6 +49,7 @@ export const Input: Component<{
   type,
   placeholder,
   autoComplete,
+  autoFocus,
   name,
   id,
   onChange,
@@ -75,6 +77,7 @@ export const Input: Component<{
       type={type}
       className={inputClassName}
       autoComplete={autoComplete}
+      autoFocus={autoFocus}
       name={name}
       id={id}
       size={size}

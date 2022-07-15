@@ -125,7 +125,7 @@ export const Home: Component = () => {
           </Button>
         </ButtonGroup>
         <div>
-          <Input placeholder="テスト入力" />
+          <Input autoFocus placeholder="テスト入力" />
           <Input type="password" placeholder="テスト入力" />
           <Input type="date" placeholder="テスト入力" />
           <Input type="month" placeholder="テスト入力" />
