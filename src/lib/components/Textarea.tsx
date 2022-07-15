@@ -10,22 +10,20 @@ import { joinClassNames } from "lib/utils";
 /**
  * テキストエリアリサイズ設定
  */
-export type TextAreaResizable = "none" | "both" | "horizontal" | "vertical";
+export type TextAreaResize = "none" | "both" | "horizontal" | "vertical";
 
 /**
  * エリアリサイズ設定からクラス名に変換する
  *
- * @param resizable テキストエリアリサイズ設定
+ * @param resize テキストエリアリサイズ設定
  * @returns クラス名
  */
-function resizableToClassName(
-  resizable?: TextAreaResizable
-): string | undefined {
-  if (!resizable) {
+function resizableToClassName(resize?: TextAreaResize): string | undefined {
+  if (!resize) {
     return undefined;
   }
 
-  switch (resizable) {
+  switch (resize) {
     case "vertical":
       return "el_textarea__resizeVertical";
     case "horizontal":
@@ -54,7 +52,7 @@ export const TextArea: Component<{
   required?: boolean;
   readOnly?: boolean;
   disabled?: boolean;
-  resizable?: TextAreaResizable;
+  resize?: TextAreaResize;
   value?: string;
   onChange?: (event: React.ChangeEvent<HTMLTextAreaElement>) => void;
 }> = ({
@@ -73,18 +71,18 @@ export const TextArea: Component<{
   required,
   readOnly,
   disabled,
-  resizable,
+  resize,
   value,
 }) => {
-  const inputClassName = React.useMemo(
+  const textAreaClassName = React.useMemo(
     () =>
-      joinClassNames("el_textarea", resizableToClassName(resizable), className),
-    [className, resizable]
+      joinClassNames("el_textarea", resizableToClassName(resize), className),
+    [className, resize]
   );
 
   return (
     <textarea
-      className={inputClassName}
+      className={textAreaClassName}
       autoFocus={autoFocus}
       autoComplete={autoComplete}
       name={name}
