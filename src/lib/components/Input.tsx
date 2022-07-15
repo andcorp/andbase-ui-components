@@ -33,6 +33,14 @@ export const Input: Component<{
   name?: string;
   id?: string;
   size?: number;
+  min?: number;
+  max?: number;
+  minLength?: number;
+  maxLength?: number;
+  pattern?: string;
+  required?: boolean;
+  readOnly?: boolean;
+  disabled?: boolean;
   onChange?: (event: React.ChangeEvent<HTMLInputElement>) => void;
 }> = ({
   type,
@@ -44,6 +52,14 @@ export const Input: Component<{
   className,
   testId,
   size,
+  min,
+  max,
+  minLength,
+  maxLength,
+  pattern,
+  required,
+  readOnly,
+  disabled,
 }) => {
   const inputClassName = React.useMemo(
     () => joinClassNames("el_input", className),
@@ -58,8 +74,16 @@ export const Input: Component<{
       name={name}
       id={id}
       size={size}
+      min={min}
+      max={max}
+      minLength={minLength}
+      maxLength={maxLength}
+      pattern={pattern}
       data-testid={testId}
       placeholder={placeholder}
+      required={required}
+      readOnly={readOnly}
+      disabled={disabled}
       onChange={onChange}
     />
   );
