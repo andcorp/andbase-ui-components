@@ -17,8 +17,10 @@ export type InputType =
   | "month"
   | "number"
   | "password"
+  | "search"
   | "tel"
   | "text"
+  | "url"
   | "week";
 
 /**
@@ -27,8 +29,9 @@ export type InputType =
 export const Input: Component<{
   type?: InputType;
   placeholder?: string;
+  autoComplete?: string;
   onChange?: (event: React.ChangeEvent<HTMLInputElement>) => void;
-}> = ({ type, placeholder, onChange, className, testId }) => {
+}> = ({ type, placeholder, autoComplete, onChange, className, testId }) => {
   const inputClassName = React.useMemo(
     () => joinClassNames("el_input", className),
     [className]
@@ -38,6 +41,7 @@ export const Input: Component<{
     <input
       type={type}
       className={inputClassName}
+      autoComplete={autoComplete}
       data-testid={testId}
       placeholder={placeholder}
       onChange={onChange}
