@@ -180,4 +180,16 @@ describe("Inputのテスト", () => {
     expect(elements).toHaveClass("el_input", "test_class");
     expect(elements.disabled).toBeTruthy();
   });
+
+  it("value指定が行えること", async () => {
+    // レンダリング実行
+    render(<Input className="test_class" value="test-input" testId="input" />);
+
+    const elements = (
+      await screen.findAllByTestId("input")
+    )[0] as HTMLInputElement;
+    expect(elements.type).toBe("text");
+    expect(elements).toHaveClass("el_input", "test_class");
+    expect(elements.value).toBe("test-input");
+  });
 });

@@ -41,6 +41,7 @@ export const Input: Component<{
   required?: boolean;
   readOnly?: boolean;
   disabled?: boolean;
+  value?: string | number;
   onChange?: (event: React.ChangeEvent<HTMLInputElement>) => void;
 }> = ({
   type,
@@ -60,6 +61,7 @@ export const Input: Component<{
   required,
   readOnly,
   disabled,
+  value,
 }) => {
   const inputClassName = React.useMemo(
     () => joinClassNames("el_input", className),
@@ -85,6 +87,7 @@ export const Input: Component<{
       readOnly={readOnly}
       disabled={disabled}
       onChange={onChange}
+      value={value}
     />
   );
 };
