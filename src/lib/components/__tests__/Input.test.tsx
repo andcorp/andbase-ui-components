@@ -79,4 +79,16 @@ describe("Inputのテスト", () => {
     expect(elements).toHaveClass("el_input", "test_class");
     expect(elements.name).toBe("testInput");
   });
+
+  it("size指定が行えること", async () => {
+    // レンダリング実行
+    render(<Input className="test_class" size={100} testId="header" />);
+
+    const elements = (
+      await screen.findAllByTestId("header")
+    )[0] as HTMLInputElement;
+    expect(elements.type).toBe("text");
+    expect(elements).toHaveClass("el_input", "test_class");
+    expect(elements.size).toBe(100);
+  });
 });
