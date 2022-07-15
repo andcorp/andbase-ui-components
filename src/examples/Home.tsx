@@ -12,6 +12,7 @@ import { NavList } from "lib/components/NavList";
 import { OList, OListItem } from "lib/components/OList";
 import { PageFooter, PageFooterItem } from "lib/components/PageFooter";
 import { PageHeader, PageHeaderItem } from "lib/components/PageHeader";
+import { TextArea } from "lib/components/Textarea";
 import { UList, UListItem } from "lib/components/UList";
 import { Footer } from "lib/layouts/Footer";
 import { Header } from "lib/layouts/Header";
@@ -134,6 +135,7 @@ export const Home: Component = () => {
           <Input value="読み取り専用" readOnly />
           <Input value="無効" disabled />
           <Input type="text" pattern="[0-9]" required />
+          <TextArea placeholder="テキストエリア" />
         </div>
       </Page>
       <Footer>
