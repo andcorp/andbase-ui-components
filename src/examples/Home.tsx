@@ -7,6 +7,7 @@ import { Button } from "lib/components/Button";
 import { ButtonGroup } from "lib/components/ButtonGroup";
 import { Heading } from "lib/components/Heading";
 import { Input } from "lib/components/Input";
+import { Label } from "lib/components/Label";
 import { Message } from "lib/components/Message";
 import { NavList } from "lib/components/NavList";
 import { OList, OListItem } from "lib/components/OList";
@@ -126,7 +127,10 @@ export const Home: Component = () => {
           </Button>
         </ButtonGroup>
         <div>
-          <Input autoFocus placeholder="テスト入力" />
+          <Label>
+            テキスト入力
+            <Input autoFocus placeholder="テスト入力" />
+          </Label>
           <Input type="password" placeholder="テスト入力" />
           <Input type="date" placeholder="テスト入力" />
           <Input type="month" placeholder="テスト入力" />
