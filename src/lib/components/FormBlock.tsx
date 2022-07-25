@@ -10,14 +10,16 @@ import { ComponentWithChildren } from "lib/types";
 /**
  * フォームブロックコンポーネント
  */
-export const FormBlock: ComponentWithChildren = ({
+export const FormBlock: ComponentWithChildren<{ grid?: boolean }> = ({
   children,
   className,
   testId,
+  grid,
 }) => {
   const formBlockClassName = React.useMemo(
-    () => joinClassNames("bl_formBlock", className),
-    [className]
+    () =>
+      joinClassNames("bl_formBlock", grid && "bl_formBlock__grid", className),
+    [className, grid]
   );
   return (
     <div className={formBlockClassName} data-testid={testId}>

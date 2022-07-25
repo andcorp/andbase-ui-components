@@ -5,6 +5,7 @@
 import { Anchor } from "lib/components/Anchor";
 import { Button } from "lib/components/Button";
 import { ButtonGroup } from "lib/components/ButtonGroup";
+import { FormBlock, FormBlockItem } from "lib/components/FormBlock";
 import { Heading } from "lib/components/Heading";
 import { Input } from "lib/components/Input";
 import { Label } from "lib/components/Label";
@@ -126,21 +127,38 @@ export const Home: Component = () => {
             危険ボタン
           </Button>
         </ButtonGroup>
-        <div>
-          <Label>
-            テキスト入力
-            <Input autoFocus placeholder="テスト入力" />
-          </Label>
+        <FormBlock grid>
+          <Label>テキスト</Label>
+          <Input autoFocus placeholder="テスト入力" />
+          <Label>パスワード</Label>
           <Input type="password" placeholder="テスト入力" />
+          <Label>日付</Label>
           <Input type="date" placeholder="テスト入力" />
+          <Label>月</Label>
           <Input type="month" placeholder="テスト入力" />
+          <Label>週</Label>
           <Input type="week" placeholder="テスト入力" />
+          <Label>日時</Label>
           <Input type="datetime-local" placeholder="テスト入力" />
+          <Label>読み取り専用</Label>
           <Input value="読み取り専用" readOnly />
+          <Label>無効</Label>
           <Input value="無効" disabled />
+          <Label>パターン</Label>
           <Input type="text" pattern="[0-9]" required />
+          <Label>テキストエリア</Label>
           <TextArea placeholder="テキストエリア" />
-        </div>
+        </FormBlock>
+        <FormBlock>
+          <FormBlockItem>
+            <div>
+              <Label>テキスト</Label>
+            </div>
+            <div>
+              <Input autoFocus placeholder="テスト入力" />
+            </div>
+          </FormBlockItem>
+        </FormBlock>
       </Page>
       <Footer>
         <PageFooter>
