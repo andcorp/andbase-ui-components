@@ -25,3 +25,22 @@ export const FormBlock: ComponentWithChildren = ({
     </div>
   );
 };
+
+/**
+ * フォームブロック項目コンポーネント
+ */
+export const FormBlockItem: ComponentWithChildren = ({
+  children,
+  className,
+  testId,
+}) => {
+  const formBlockItemClassName = React.useMemo(
+    () => joinClassNames("bl_formBlock_item", className),
+    [className]
+  );
+  return (
+    <div className={formBlockItemClassName} data-testid={testId}>
+      {children}
+    </div>
+  );
+};
