@@ -2,6 +2,8 @@
  * Exampleサイト ホーム
  */
 
+import React from "react";
+
 import { Anchor } from "lib/components/Anchor";
 import { Button } from "lib/components/Button";
 import { ButtonGroup } from "lib/components/ButtonGroup";
@@ -14,6 +16,7 @@ import { NavList } from "lib/components/NavList";
 import { OList, OListItem } from "lib/components/OList";
 import { PageFooter, PageFooterItem } from "lib/components/PageFooter";
 import { PageHeader, PageHeaderItem } from "lib/components/PageHeader";
+import { Radio } from "lib/components/Radio";
 import { TextArea } from "lib/components/Textarea";
 import { UList, UListItem } from "lib/components/UList";
 import { Footer } from "lib/layouts/Footer";
@@ -148,6 +151,21 @@ export const Home: Component = () => {
           <Input type="text" pattern="[0-9]" required />
           <Label>テキストエリア</Label>
           <TextArea placeholder="テキストエリア" />
+          <Label>ラジオボタン</Label>
+          <ButtonGroup>
+            <span>
+              <Radio name="radio" value="value1" id="radio-value1" />
+              <Label htmlFor="radio-value1">ラジオ1</Label>
+            </span>
+            <span>
+              <Radio name="radio" value="value2" id="radio-value2" />
+              <Label htmlFor="radio-value2">ラジオ2</Label>
+            </span>
+            <span>
+              <Radio name="radio" value="value3" id="radio-value3" />
+              <Label htmlFor="radio-value3">ラジオ3</Label>
+            </span>
+          </ButtonGroup>
         </FormBlock>
         <FormBlock>
           <FormBlockItem>
