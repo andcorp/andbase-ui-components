@@ -110,4 +110,19 @@ describe("Radioのテスト", () => {
     expect(elements.defaultChecked).toBeTruthy();
     expect(elements.checked).toBeTruthy();
   });
+
+  it("checked指定が行えること", async () => {
+    // レンダリング実行
+    render(
+      <Radio className="test_class" value="test-radio" checked testId="radio" />
+    );
+
+    const elements = (
+      await screen.findAllByTestId("radio")
+    )[0] as HTMLInputElement;
+    expect(elements.type).toBe("radio");
+    expect(elements).toHaveClass("el_radio", "test_class");
+    expect(elements.value).toBe("test-radio");
+    expect(elements.checked).toBeTruthy();
+  });
 });

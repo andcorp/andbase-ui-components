@@ -19,6 +19,7 @@ export const Radio: Component<{
   disabled?: boolean;
   value?: string;
   defaultChecked?: boolean;
+  checked?: boolean;
   onChange?: (event: React.ChangeEvent<HTMLInputElement>) => void;
 }> = ({
   autoFocus,
@@ -32,6 +33,7 @@ export const Radio: Component<{
   disabled,
   value,
   defaultChecked,
+  checked,
 }) => {
   const radioClassName = React.useMemo(
     () => joinClassNames("el_radio", className),
@@ -51,6 +53,7 @@ export const Radio: Component<{
       disabled={disabled}
       onChange={onChange}
       defaultChecked={defaultChecked}
+      checked={checked}
       value={value}
     />
   );
