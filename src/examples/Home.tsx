@@ -24,6 +24,7 @@ import { Header } from "lib/layouts/Header";
 import { Page } from "lib/layouts/Page";
 import { PageRoot } from "lib/layouts/PageRoot";
 import { Component } from "lib/types";
+import { CheckBox } from "lib/components/CheckBox";
 
 /**
  * Exampleサイト ホーム
@@ -164,6 +165,21 @@ export const Home: Component = () => {
             <span>
               <Radio name="radio" value="value3" id="radio-value3" />
               <Label htmlFor="radio-value3">ラジオ3</Label>
+            </span>
+          </ButtonGroup>
+          <Label>チェックボックス</Label>
+          <ButtonGroup>
+            <span>
+              <CheckBox value="value1" id="check-value1" />
+              <Label htmlFor="check-value1">チェックボックス1</Label>
+            </span>
+            <span>
+              <CheckBox value="value2" id="check-value2" />
+              <Label htmlFor="check-value2">チェックボックス2</Label>
+            </span>
+            <span>
+              <CheckBox value="value3" id="check-value3" />
+              <Label htmlFor="check-value3">チェックボックス3</Label>
             </span>
           </ButtonGroup>
         </FormBlock>
