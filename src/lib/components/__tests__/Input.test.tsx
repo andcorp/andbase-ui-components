@@ -194,4 +194,16 @@ describe("Inputのテスト", () => {
     expect(elements).toHaveClass("el_input", "test_class");
     expect(elements.value).toBe("test-input");
   });
+
+  it("inputMode指定が行えること", async () => {
+    // レンダリング実行
+    render(<Input className="test_class" inputMode="numeric" testId="input" />);
+
+    const elements = (
+      await screen.findAllByTestId("input")
+    )[0] as HTMLInputElement;
+    expect(elements.type).toBe("text");
+    expect(elements).toHaveClass("el_input", "test_class");
+    expect(elements.inputMode).toBe("numeric");
+  });
 });
