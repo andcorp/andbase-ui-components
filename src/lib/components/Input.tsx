@@ -24,6 +24,19 @@ export type InputType =
   | "week";
 
 /**
+ * 入力モード
+ */
+export type InputMode =
+  | "none"
+  | "text"
+  | "decimal"
+  | "numeric"
+  | "tel"
+  | "search"
+  | "email"
+  | "url";
+
+/**
  * Input要素
  */
 export const Input: Component<{
@@ -44,6 +57,7 @@ export const Input: Component<{
   readOnly?: boolean;
   disabled?: boolean;
   value?: string | number;
+  inputMode?: InputMode;
   onChange?: (event: React.ChangeEvent<HTMLInputElement>) => void;
 }> = ({
   type,
@@ -66,6 +80,7 @@ export const Input: Component<{
   readOnly,
   disabled,
   value,
+  inputMode,
 }) => {
   const inputClassName = React.useMemo(
     () => joinClassNames("el_input", className),
@@ -94,6 +109,7 @@ export const Input: Component<{
       disabled={disabled}
       onChange={onChange}
       value={value}
+      inputMode={inputMode}
     />
   );
 };
