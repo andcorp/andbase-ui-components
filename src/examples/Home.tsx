@@ -25,6 +25,7 @@ import { Page } from "lib/layouts/Page";
 import { PageRoot } from "lib/layouts/PageRoot";
 import { Component } from "lib/types";
 import { CheckBox } from "lib/components/CheckBox";
+import { Select } from "lib/components/Select";
 
 /**
  * Exampleサイト ホーム
@@ -182,6 +183,22 @@ export const Home: Component = () => {
               <Label htmlFor="check-value3">チェックボックス3</Label>
             </span>
           </ButtonGroup>
+          <Label>選択リスト</Label>
+          <Select>
+            <option value="1">選択リスト項目1</option>
+            <option value="2">選択リスト項目2</option>
+            <option value="3">選択リスト項目3</option>
+            <option value="4">選択リスト項目4</option>
+            <option value="5">選択リスト項目5</option>
+          </Select>
+          <Label>複数選択リスト</Label>
+          <Select multiple size={3}>
+            <option value="1">選択リスト項目1</option>
+            <option value="2">選択リスト項目2</option>
+            <option value="3">選択リスト項目3</option>
+            <option value="4">選択リスト項目4</option>
+            <option value="5">選択リスト項目5</option>
+          </Select>
         </FormBlock>
         <FormBlock>
           <FormBlockItem>
