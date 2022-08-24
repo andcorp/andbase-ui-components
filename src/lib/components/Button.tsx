@@ -8,8 +8,8 @@ import {
   ComponentWithChildren,
   DisabledProps,
   ThemeColorProps,
-} from "lib/types";
-import { joinClassNames } from "lib/utils";
+} from "../types";
+import { joinClassNames } from "../utils";
 
 /**
  * ボタン要素

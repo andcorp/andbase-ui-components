@@ -6,19 +6,10 @@
     "noEmit": false,
     "declaration": true,
     "outDir": "./dist",
-    "baseUrl": ".",
-    "paths": {
-      "@/*": [
-        "src/*"
-      ],
-      "*": [
-        "node_modules/@types/*",
-        "*"
-      ]
-    },
+    "sourceMap": true
   },
   "include": [
-    "src/lib"
+    "src/lib/**/*"
   ],
   "exclude": [
     "src/lib/**/__tests__/**/*"

@@ -4,8 +4,8 @@
 
 import React from "react";
 
-import { joinClassNames } from "lib/utils";
-import { ComponentWithChildren } from "lib/types";
+import { joinClassNames } from "../utils";
+import { ComponentWithChildren } from "../types";
 
 /**
  * フォームブロックコンポーネント

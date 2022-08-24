@@ -4,8 +4,8 @@
 
 import React from "react";
 
-import { ComponentWithChildren, ThemeColorProps } from "lib/types";
-import { joinClassNames } from "lib/utils";
+import { ComponentWithChildren, ThemeColorProps } from "../types";
+import { joinClassNames } from "../utils";
 
 /**
  * メッセージコンポーネント
