@@ -3,8 +3,8 @@
  */
 import React from "react";
 
-import { ComponentWithChildren } from "lib/types";
-import { joinClassNames } from "lib/utils";
+import { ComponentWithChildren } from "../types";
+import { joinClassNames } from "../utils";
 
 /**
  * フッター要素

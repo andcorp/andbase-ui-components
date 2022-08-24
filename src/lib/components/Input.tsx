@@ -4,8 +4,8 @@
 
 import React from "react";
 
-import { Component } from "lib/types";
-import { joinClassNames } from "lib/utils";
+import { Component } from "../types";
+import { joinClassNames } from "../utils";
 
 /**
  * 入力項目の種類

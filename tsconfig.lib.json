@@ -5,10 +5,11 @@
     "skipLibCheck": false,
     "noEmit": false,
     "declaration": true,
-    "outDir": "./dist"
+    "outDir": "./dist",
+    "sourceMap": true
   },
   "include": [
-    "src/lib"
+    "src/lib/**/*"
   ],
   "exclude": [
     "src/lib/**/__tests__/**/*"
