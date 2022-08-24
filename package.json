@@ -7,15 +7,12 @@
   "files": [
     "/dist"
   ],
-  "repository": "git@github.com:andcorp/andbase-ui-components.git",
+  "repository": "https://github.com/andcorp/andbase-ui-components.git",
   "author": "and-a-yamaguchi <a-yamaguchi@andcorp.co.jp>",
   "license": "MIT",
   "private": false,
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
-  },
   "dependencies": {
-    "@andcorp/andbase-ui-styles": "https://github.com/andcorp/andbase-ui-styles.git",
+    "@andcorp/andbase-ui-styles": "^0.0.6",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^13.0.0",
     "@testing-library/user-event": "^13.2.1",
