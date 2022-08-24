@@ -5,7 +5,17 @@
     "skipLibCheck": false,
     "noEmit": false,
     "declaration": true,
-    "outDir": "./dist"
+    "outDir": "./dist",
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [
+        "src/*"
+      ],
+      "*": [
+        "node_modules/@types/*",
+        "*"
+      ]
+    },
   },
   "include": [
     "src/lib"
