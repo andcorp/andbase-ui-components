@@ -2,7 +2,11 @@
   "name": "@andcorp/andbase-ui-components",
   "version": "0.0.1",
   "description": "AND Base UI components",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "/dist"
+  ],
   "repository": "git@github.com:andcorp/andbase-ui-components.git",
   "author": "and-a-yamaguchi <a-yamaguchi@andcorp.co.jp>",
   "license": "MIT",
@@ -33,7 +37,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "build-lib": "tsc --project ./tsconfig.lib.json"
   },
   "eslintConfig": {
     "extends": [
