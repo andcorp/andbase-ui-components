@@ -15,7 +15,7 @@ jobs:
           cache: yarn
       - run: yarn install
       - run: yarn test
-      - run: yarn build
+      - run: yarn build-lib
 
   publish-gpr:
     needs: build
