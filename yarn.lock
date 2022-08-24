@@ -10,9 +10,10 @@
     "@jridgewell/gen-mapping" "^0.1.0"
     "@jridgewell/trace-mapping" "^0.3.9"
 
-"@andcorp/andbase-ui-styles@https://github.com/andcorp/andbase-ui-styles.git":
-  version "0.0.1"
-  resolved "https://github.com/andcorp/andbase-ui-styles.git#d23cdf41a83483eeef83a60041ff4c45cbb4bb45"
+"@andcorp/andbase-ui-styles@^0.0.6":
+  version "0.0.6"
+  resolved "https://registry.yarnpkg.com/@andcorp/andbase-ui-styles/-/andbase-ui-styles-0.0.6.tgz#eb67dc46e403e15e1dd02bb0e7bbc4be0cf2f39b"
+  integrity sha512-MXvimzrgMcnWarBxtOSdm/UdwNq18D4Y+dcFcMkl6RNUUGbiM6j6aC3QDjnbR8apYmELNlfPCn4LUYsWyWHiJw==
   dependencies:
     modern-css-reset "^1.4.0"
 

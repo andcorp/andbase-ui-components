@@ -1,0 +1,16 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "allowJs": false,
+    "skipLibCheck": false,
+    "noEmit": false,
+    "declaration": true,
+    "outDir": "./dist"
+  },
+  "include": [
+    "src/lib"
+  ],
+  "exclude": [
+    "src/lib/**/__tests__/**/*"
+  ]
+}
