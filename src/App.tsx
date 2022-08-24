@@ -1,4 +1,4 @@
-import { Home } from "examples/Home";
+import { Home } from "./examples/Home";
 
 /**
  * アプリケーションルート

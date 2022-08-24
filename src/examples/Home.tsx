@@ -2,30 +2,28 @@
  * Exampleサイト ホーム
  */
 
-import React from "react";
-
-import { Anchor } from "lib/components/Anchor";
-import { Button } from "lib/components/Button";
-import { ButtonGroup } from "lib/components/ButtonGroup";
-import { FormBlock, FormBlockItem } from "lib/components/FormBlock";
-import { Heading } from "lib/components/Heading";
-import { Input } from "lib/components/Input";
-import { Label } from "lib/components/Label";
-import { Message } from "lib/components/Message";
-import { NavList } from "lib/components/NavList";
-import { OList, OListItem } from "lib/components/OList";
-import { PageFooter, PageFooterItem } from "lib/components/PageFooter";
-import { PageHeader, PageHeaderItem } from "lib/components/PageHeader";
-import { Radio } from "lib/components/Radio";
-import { TextArea } from "lib/components/Textarea";
-import { UList, UListItem } from "lib/components/UList";
-import { Footer } from "lib/layouts/Footer";
-import { Header } from "lib/layouts/Header";
-import { Page } from "lib/layouts/Page";
-import { PageRoot } from "lib/layouts/PageRoot";
-import { Component } from "lib/types";
-import { CheckBox } from "lib/components/CheckBox";
-import { Select } from "lib/components/Select";
+import { Anchor } from "../lib/components/Anchor";
+import { Button } from "../lib/components/Button";
+import { ButtonGroup } from "../lib/components/ButtonGroup";
+import { FormBlock, FormBlockItem } from "../lib/components/FormBlock";
+import { Heading } from "../lib/components/Heading";
+import { Input } from "../lib/components/Input";
+import { Label } from "../lib/components/Label";
+import { Message } from "../lib/components/Message";
+import { NavList } from "../lib/components/NavList";
+import { OList, OListItem } from "../lib/components/OList";
+import { PageFooter, PageFooterItem } from "../lib/components/PageFooter";
+import { PageHeader, PageHeaderItem } from "../lib/components/PageHeader";
+import { Radio } from "../lib/components/Radio";
+import { TextArea } from "../lib/components/Textarea";
+import { UList, UListItem } from "../lib/components/UList";
+import { Footer } from "../lib/layouts/Footer";
+import { Header } from "../lib/layouts/Header";
+import { Page } from "../lib/layouts/Page";
+import { PageRoot } from "../lib/layouts/PageRoot";
+import { Component } from "../lib/types";
+import { CheckBox } from "../lib/components/CheckBox";
+import { Select } from "../lib/components/Select";
 
 /**
  * Exampleサイト ホーム
