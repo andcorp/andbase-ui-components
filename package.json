@@ -1,6 +1,6 @@
 {
   "name": "@andcorp/andbase-ui-components",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "AND Base UI components",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -12,7 +12,7 @@
   "license": "MIT",
   "private": false,
   "publishConfig": {
-    "@andcorp:registry": "https://npm.pkg.github.com"
+    "registry": "https://npm.pkg.github.com"
   },
   "dependencies": {
     "@andcorp/andbase-ui-styles": "https://github.com/andcorp/andbase-ui-styles.git",
