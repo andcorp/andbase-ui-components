@@ -2,6 +2,7 @@
   "name": "@andcorp/andbase-ui-components",
   "version": "0.0.4",
   "description": "AND Base UI components",
+  "type": "module",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
